@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Sinatra Fitness Tracker"
-date:       2019-04-06 01:39:39 +0000
+date:       2019-04-05 21:39:39 -0400
 permalink:  sinatra_fitness_tracker
 ---
 
@@ -39,7 +39,7 @@ class Exercise < ActiveRecord::Base
 end
 ```
 
-Next, focusing on CRUD (Create, Read, Update and Destroy), I wanted the ability to have users sign up and create an account and be able to create new workouts and associating exercises. A user also needed to be able to view, edit and delete these items. Using this logic, I created my views, keeping in my mind the seven RESTful routes. The nice thing about this, was that most of the code was similar across the multiple controllers. The controllers consisted of an application controller that inherited from Sinatra::Base and a users controller, workouts controller and exercises controller that all inherited from the application controller. This was important as it allowed me the ability to access ActiveRecord methods across all controllers. 
+Next, focusing on CRUD (Create, Read, Update and Destroy), I wanted the ability to have users sign up and create an account and be able to create new workouts and associating exercises. A user also needed to be able to view, edit and delete these items. Using this logic, I created my views, keeping in my mind the seven RESTful routes. The nice thing about this, was that most of the code was similar across the multiple controllers. The controllers consisted of an application controller that inherited from Sinatra::Base and a users controller, workouts controller and exercises controller that all inherited from the application controller. This was important as it allowed me the ability to access all of the methods in the application controller across all other controllers. 
 
 ```
 class WorkoutsController < ApplicationController
