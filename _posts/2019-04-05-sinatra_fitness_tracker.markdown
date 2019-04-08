@@ -6,11 +6,11 @@ permalink:  sinatra_fitness_tracker
 ---
 
 
-I’ve just completed my second project. For this project, we were instructed to create a Sinatra app using Sinatra-ActiveRecord, Ruby and SQLite3. We also used CSS and HTML. 
+I’ve just completed my second project. For this project, we were instructed to create an app using the Sinatra framework, ActiveRecord, Ruby and SQLite3. We also used CSS and HTML. 
 
 For my project, I decided to build a fitness tracker. For me personally, fitness is a big part of my life and since I was younger, I’ve always tried to stay active. As I’ve gotten older, I’ve realized the importance of being able to track these workouts. Tracking can help for a variety of reasons: such as addressing and noticing any health concerns, identifying a change in energy levels, the presence of stress and improved overall wellness, just to a name a few. In creating my app, I hope to be able to provide users with this same capability as they track their own individual workouts. 
 
-Now to get started with my project, I knew what I wanted to create but I wasn’t quite sure on all the pieces that would be involved. I decided to first simply sketch out my ideas. To do so, I used a software diagaram tool that allowed me to visually map out my thoughts which really helped me start the project off with a clear and concise plan. 
+Now to get started with my project, I knew what I wanted to create but I wasn’t quite sure on all the pieces that would be involved. I decided to first simply sketch out my ideas. To do so, I used a software diagram tool that allowed me to visually map out my thoughts which really helped me start the project off with a clear and concise plan. 
 
 We were required to utilize MVC, which stands for Models, Views and Controllers. Right off the bat, I knew that I would have models for users and workouts. And after some thinking, I decided to include a model for exercises as well. After creating my models, I needed to focus on the relationships. I was able to determine that a user would `have_many ` workouts and a workout would `belong_to ` a user. In addition, a workout would `have_many` exercises and an exercise would `belong_to` a workout. The last relationship was that a user would `have_many ` exercises `through `workouts. 
 
