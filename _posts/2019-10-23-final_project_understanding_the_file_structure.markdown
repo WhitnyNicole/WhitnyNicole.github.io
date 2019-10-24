@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Final Project: Understanding the File Structure"
-date:       2019-10-24 00:22:12 +0000
+date:       2019-10-23 20:22:13 -0400
 permalink:  final_project_understanding_the_file_structure
 ---
 
